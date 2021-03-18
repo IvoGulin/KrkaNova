@@ -27,35 +27,14 @@
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Push down content on small screens --> 
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- About section -->
   <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-    <h4><b>Dobrodošli</b></h4>
-    <img src="img/ja.jpg" alt="Me" class="w3-image w3-padding-32" id="okruglo" width="350" height="350">
+    <h4><b>Ribolov</b></h4>
+    
     <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>Ja sam Ivo Gulin.</h4>
-      <p>Dolazim iz mjesta Lozovca kod Šibenika. 
-	  Po zanimanju sam dipl. pravnik, 
-	  Sada se bavim web dizajnom, položio sam tečaj u Algebri za web dizajnera. 
-	  Volim se povezivati s različitim i stranim ljudima. 
-	  Ovo je oblik izražavanja komunikacije kroz web stranice. 
-	  Rad je dinamičan i izazovan. Veseli izrada vizualne komunikacije sa klijentima i njihovim korisnicimna. 
-	  Usavršavam se za Frontend developera. 
-	  Aktivno se koristim engleskim jezikom koji mi je neophodan za praćenje web tutorijala na engleskom. 
-	  Ako Vam treba web stranica. Nazovite me, mi se dogovorimo i razmotimo vašu želju i namjeru pretočiti u web stranicu kao reklamu Vaše tvrtke.</p>
-      <p>mail: ivo.gulin@mymail.com</p>
-      <p>tel: 022-778-000</p>
-      <hr class="w3-opacity">
-      <h4>O rijeci krki</h4>
-	  <p>Rijeka Krka je kraška ljepotica, ima izuzetne i jedinstvene slapove i jezera.
-		Izlet na rijeku Krku je nezaboravan i unikatan doživljaj.
-		Kada imate vrijemena preporučam rijeku Krku za odmor i razonodu.</p>
+      <h4>Ribolov na rijeci Krki</h4>
+      <p>Ribolov na rijeci Krki je moguć uz Dozvolu Uprave. Od slapa prema mostu ima neke morske ribe.
+   Od izvora do slapova Skradinski Buk je riječna riba. Provedite aktivan odmor na rijeci Krki.</p>
+      
       <div class="w3-row-padding" style="margin:0 -16px">
         
         
@@ -63,23 +42,30 @@
       </div>
     </div>
   </div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+   
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
   <!-- Photo grid -->
   <div class="w3-row">
     <div class="w3-third">
-      <img src="img/krka1.jpg" style="width:100%" onclick="onClick(this)" alt="Najljepši slapovi u Europi">
+      <img src="img/ribolov1.jpg" style="width:100%" onclick="onClick(this)" alt="Djevojka lovi ribu">
     </div>
 
     <div class="w3-third">
-      <img src="img/krka2.jpg" style="width:100%" onclick="onClick(this)" alt="Ekipa se kupa na slapovima">
+      <img src="img/ribolov2.jpg" style="width:100%" onclick="onClick(this)" alt="Dobar ulov">
     </div>
     
     <div class="w3-third">
-      <img src="img/krka3.jpg" style="width:100%" onclick="onClick(this)" alt="Ekipa lovi ribu sa broda">
+      <img src="img/ribolov3.jpg" style="width:100%" onclick="onClick(this)" alt="Ima i male ribe">
+      
     </div>
   </div>
 
-
-  
+  <!-- Pagination -->
+    
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
@@ -88,14 +74,10 @@
       <p id="caption"></p>
     </div>
   </div>
-
-  
-
   
   <div class="w3-black w3-center w3-padding-24">Izradio Ivo Gulin 2021
   <a href="http://cvijet.pondi.hr" target="_blank" class="w3-hover-opacity">Krka Nova</a>
   </div>
-
 <!-- End page content -->
 </div>
 <script src="script.js"></script>

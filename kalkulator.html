@@ -36,26 +36,34 @@
   
   <!-- About section -->
   <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-    <h4><b>Dobrodošli</b></h4>
-    <img src="img/ja.jpg" alt="Me" class="w3-image w3-padding-32" id="okruglo" width="350" height="350">
+    <h4><b>Kalkulator</b></h4>
+    <img src="img/aplikacija2.jpg" alt="Me" class="w3-image w3-padding-32" id="okruglo" width="350" height="350">
     <div class="w3-content w3-justify" style="max-width:600px">
-      <h4>Ja sam Ivo Gulin.</h4>
-      <p>Dolazim iz mjesta Lozovca kod Šibenika. 
-	  Po zanimanju sam dipl. pravnik, 
-	  Sada se bavim web dizajnom, položio sam tečaj u Algebri za web dizajnera. 
-	  Volim se povezivati s različitim i stranim ljudima. 
-	  Ovo je oblik izražavanja komunikacije kroz web stranice. 
-	  Rad je dinamičan i izazovan. Veseli izrada vizualne komunikacije sa klijentima i njihovim korisnicimna. 
-	  Usavršavam se za Frontend developera. 
-	  Aktivno se koristim engleskim jezikom koji mi je neophodan za praćenje web tutorijala na engleskom. 
-	  Ako Vam treba web stranica. Nazovite me, mi se dogovorimo i razmotimo vašu želju i namjeru pretočiti u web stranicu kao reklamu Vaše tvrtke.</p>
-      <p>mail: ivo.gulin@mymail.com</p>
-      <p>tel: 022-778-000</p>
+      <h4>Ovdje možete izračunati nešto</h4>
+      <form>
+		<div class="form-group">
+			<label for="vis">Unesi X</label>
+			<input type="number" class="form-control" id="var1">
+		</div>
+		<div class="form-group">
+			<label for="tez">Unesi Y</label>
+			<input type="number" class="form-control" id="var2">
+		</div>
+		<button type="button" class="btn btn-primary" onclick="zbroji()">+</button>
+		<button type="button" class="btn btn-primary" onclick="oduzmi()">-</button>
+		<button type="button" class="btn btn-primary" onclick="pomnozi()">*</button>
+		<button type="button" class="btn btn-primary" onclick="podijeli()">/</button>
+		<button type="button" class="btn btn-primary" onclick="potenciraj()">^</button>
+		<button type="button" class="btn btn-primary" onclick="trokut()">Trokut</button>
+		<button type="button" class="btn btn-primary" onclick="mod()">%</button>
+		<button type="button" class="btn btn-primary" onclick="sigma()">∑</button>
+	<hr>
+		<p id="rez"></p>
+	</form> 
+      
       <hr class="w3-opacity">
-      <h4>O rijeci krki</h4>
-	  <p>Rijeka Krka je kraška ljepotica, ima izuzetne i jedinstvene slapove i jezera.
-		Izlet na rijeku Krku je nezaboravan i unikatan doživljaj.
-		Kada imate vrijemena preporučam rijeku Krku za odmor i razonodu.</p>
+      
+	  
       <div class="w3-row-padding" style="margin:0 -16px">
         
         
@@ -63,32 +71,11 @@
       </div>
     </div>
   </div>
-  <!-- Photo grid -->
-  <div class="w3-row">
-    <div class="w3-third">
-      <img src="img/krka1.jpg" style="width:100%" onclick="onClick(this)" alt="Najljepši slapovi u Europi">
-    </div>
-
-    <div class="w3-third">
-      <img src="img/krka2.jpg" style="width:100%" onclick="onClick(this)" alt="Ekipa se kupa na slapovima">
-    </div>
-    
-    <div class="w3-third">
-      <img src="img/krka3.jpg" style="width:100%" onclick="onClick(this)" alt="Ekipa lovi ribu sa broda">
-    </div>
-  </div>
+  
 
 
   
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
+ 
   
 
   
@@ -99,5 +86,6 @@
 <!-- End page content -->
 </div>
 <script src="script.js"></script>
+<script src="kalkulator.js"></script>
 </body>
 </html>
